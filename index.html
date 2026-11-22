@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Mystic Maze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>✨ Mini Mystic Maze ✨</h1>
+            <p class="subtitle">An Enchanted Puzzle Adventure</p>
+
+            <div class="wizard-icon">🧙</div>
+
+            <p>
+                Find the magical keys, solve the maze,
+                and unlock the enchanted exit!
+            </p>
+
+            <div class="instructions">
+                <h3>How to Play</h3>
+                <p>⬆️⬇️⬅️➡️ Use arrow keys to move</p>
+                <p>🔑 Collect the key</p>
+                <p>🚪 Reach the exit to complete the level</p>
+            </div>
+
+            <button id="play-btn">Start Adventure</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" style="display: none;">
+            <h1>✨ Mini Mystic Maze ✨</h1>
+
+            <div class="game-info">
+                <span>🔑 Keys: <span id="key-count">0</span></span>
+                <span>Level: <span id="level-number">1</span></span>
+            </div>
+
+            <div id="maze"></div>
+
+            <p id="message">Find the key and reach the exit!</p>
+
+            <button id="restart-btn">Restart Game</button>
+        </div>
+
+        <!-- Victory Screen -->
+        <div id="victory-screen" style="display: none;">
+            <h1>🎉 Maze Completed! 🎉</h1>
+
+            <div class="wizard-icon">🧙✨</div>
+
+            <h2>You are a Mystic Maze Master!</h2>
+
+            <p>You collected the magical keys and completed every level!</p>
+
+            <button id="play-again-btn">Play Again</button>
+            <button id="main-menu-btn">Main Menu</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
